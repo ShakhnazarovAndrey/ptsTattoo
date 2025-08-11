@@ -1,0 +1,1075 @@
+@import 'resets.scss'
+@import 'normalizez.scss'
+@font-face 
+    font-family: 'Futurall'
+    src: url('../fonts/futuralt_bold.ttf')
+    font-weight: bold
+    font-style: normal
+html
+    font-family: 'Futurall'
+    font-weight: bold
+    scroll-behavior: smooth
+*
+    box-sizing: border-box
+.container
+    max-width: 1140px
+    margin: 0 auto
+    position: relative
+.main-section
+    position: relative
+    min-height: 856px
+    background: #060606
+    padding-top: 16px
+    
+    overflow: hidden
+    
+    &__logo
+        width: 113px
+        height: 113px
+        margin-right: 50px
+    &__nav-container
+        display: flex
+        
+        flex-direction: row
+
+.nav-menu
+    
+    &__list
+        display: flex
+        flex-direction: row
+        margin: 0
+        padding-top: 43px
+        list-style: none
+        gap: 98px
+    &__list-item
+        color: #FFFFFF
+        
+        font-size: 20px
+        a
+            text-decoration: none
+            color: #FFFFFF
+
+.left-wrapper
+    position: relative
+    &__title
+        
+        
+        padding-top: 85px
+        padding-bottom: 8px 
+        margin-bottom: 0
+        margin-top: 0
+        
+    &__text
+        line-height: 32px
+        z-index: 1
+    
+.title
+    font-size: 48px
+    color: #FFFFFF  
+    
+.text
+    color: #FFFFFF 
+    font-size: 24px
+    
+    
+
+.right-wrapper
+    position: absolute
+    width: 734px
+    right: -160px
+    top: -60px  
+    padding-top: 88px    
+    &__img
+        width: 501px
+        height: 669px
+        position: relative
+        top: 0px
+.second-section
+    background: #060606
+    max-height: 650px
+    padding-top: 98px
+    &__title
+        margin-bottom: 98px
+.portfolio-carousel
+    position: relative  
+    width: 100%
+    min-width: 1140px
+    margin: 0 auto
+    overflow: 
+.carousel-track-container
+    overflow: hidden 
+    padding: 20px 0
+    
+.carousel-track
+    display: flex
+    transition: transform 0.5s ease
+    gap 15px
+    padding: -1px 50px
+.carousel-slide
+    width: 300px
+    height: 400px
+    flex-shrink: 0
+    position: relative
+    cursor: pointer
+    transition: transform 0.3s ease
+    border-radius: 8px
+    overflow: hidden
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+    margin: 0 7.5px
+.carousel-slide:hover
+    transform: scale(1.03)
+.carousel-slide img
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+.carousel-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #FFFFFF
+    border: none
+    font-size: 24px
+    cursor: pointer
+    z-index: 10
+    transition: background-color 0.3s ease
+.carousel-button:hover
+    background-color: #ffffff
+.carousel-button.prev
+    left: 10px
+.carousel-button.next
+    right: 10px
+
+.question-section
+    background: #060606
+    max-height: 650px
+    padding-top: 98px
+.question-carousel
+    position: relative  
+    width: 100%
+    min-width: 1140px
+    margin: 0 auto
+    overflow: 
+.carousel-tracks-container
+    overflow: hidden 
+    padding: 20px 0
+    
+.carousel-tracks
+    display: flex
+    transition: transform 0.5s ease
+    gap 15px
+    padding: -1px 50px
+.carousel-slides
+    width: 300px
+    height: 400px
+    flex-shrink: 0
+    position: relative
+    cursor: pointer
+    transition: transform 0.3s ease
+    border-radius: 8px
+    overflow: hidden
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+    margin: 0 7.5px
+.carousel-slides:hover
+    transform: scale(1.03)
+.carousel-slides img
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+.carousel-buttons
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #FFFFFF
+    border: none
+    font-size: 24px
+    cursor: pointer
+    z-index: 10
+    transition: background-color 0.3s ease
+.carousel-buttons:hover
+    background-color: #ffffff
+.carousel-buttons.prev
+    left: 10px
+.carousel-buttons.next
+    right: 10px
+
+.third-section
+    background: #060606
+    min-height: 881px
+    padding-top: 98px
+    &__title
+        margin-bottom: 98px
+.img
+    width: 367px
+    height: 245px
+.fourth-section
+    background: #060606
+    min-height: 700px
+    &__online
+        top: 20px
+        right: 3px
+    
+    &__container
+        max-width: 1140px
+        margin: 0 auto  
+        display: flex
+        gap: 30px
+        align-items: flex-start 
+    &__img
+        width: 379px
+        height: 284px
+        
+        
+    /* padding-top: 98px */
+    &__title
+        margin-bottom: 58px
+    &__adress
+        margin-bottom: 8px
+        
+    &__left-wrapper
+        width: 555px
+        display: flex
+        flex-direction: column
+        
+    &__right-wrapper
+        width: 735px
+        flex: 1
+.register
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    top: 90px
+    &__img
+        width:  379px
+        height: 284px 
+        top: -57px
+        right: 0 
+        position: relative
+    &__online
+        right: 90px
+        margin: 0 
+        z-index: 10000 
+        text-align: center  
+    &__cursor
+        width: 88px
+        height: 66px
+        position: relative
+        right: -51px
+        top: -170px
+.footer
+    min-height: 300px
+    background: #060606
+    &__container
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+        justify-content: space-between
+    &__column
+        flex: 1 1 220px
+        font-size: 14px
+    &__logo
+        width: 113px
+        height: 113px
+        margin-bottom: 20px
+    &__logo-text
+        font-size: 36px
+        color: #FFFFFF
+    &__title
+        font-size: 18px
+        color: #FFFFFF
+        margin: 15px 0 8px
+    &__text
+        color: #FFFFFF
+        margin-bottom: 8px
+    &__media
+        position: relative
+        top: 51px
+    &__media-tg
+        margin-right: 10px
+    &__payments
+        position: relative
+        top: 56px
+    &__payments-visa
+        position: relative
+        top: -7px
+    &__designer
+        position: relative
+        top: 80px
+        color: #FFFFFF
+        a
+            text-decoration: none
+            color: #FFFFFF
+
+
+
+
+@media (max-width:1199px)
+    
+    .container
+        width: 960px
+        
+    .main-section
+        
+        
+        
+        
+        &__logo
+            width: 99px
+            height: 104px
+            
+        
+            
+    .nav-menu
+        
+        position: fixed 
+        top: 0
+        right: -100%
+        height: 100vh
+        background: #FFFFFF
+        z-index: 20
+        width: 50%
+        transition: 0.6s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+            position: relative
+            z-index: 10000000
+            
+        
+            
+
+        &__list-item
+            margin-right: 0
+            
+            a
+                color: #060606
+    .hamburger
+        width: 30px
+        top: 40px
+        right: 30px
+        position: absolute
+        height: 14px
+        z-index: 30
+        span
+            
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                
+                margin-bottom: 0
+            background: #FFFFFF
+    .hamburger_active
+        span
+            background: #060606
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        
+        right: 0px
+
+        
+        
+            
+    .left-wrapper
+        position: relative
+        right: -59px
+        
+        &__title
+            font-size: 43px
+            
+            
+        &__text
+            font-size: 19px
+            line-height: 29px
+            position: relative
+            right: 0
+        
+    .title
+        font-size: 36px
+          
+        
+   
+        
+        
+        
+
+    .right-wrapper
+        &__img
+            width: 479px
+            height: 612px
+            position: relative
+            right: -57px
+      
+            
+    .second-section
+      
+        
+    .portfolio-carousel
+        min-width: 955px
+        
+        
+         
+    
+       
+    .carousel-button.next
+        right: 31px
+    
+    .question-carousel
+        min-width: 955px
+        
+        
+         
+    
+       
+    .carousel-buttons.next
+        right: 31px
+     
+
+
+    .third-section
+        &__cards-box
+            position: relative
+            right: -21px
+            width: 914px
+
+        
+            
+    .img
+        width: 300px
+        height: 200px
+    .fourth-section
+        &__map
+            position: relative
+            right: 0
+        
+        
+        
+            
+    .footer
+        
+        
+        &__container
+            gap: 5px
+            
+        &__column
+            flex: 1 -1 220px
+            font-size: 14px
+            
+        &__logo
+            width: 86px
+            height: 86px
+          
+        &__logo-text
+            font-size: 30px
+          
+            
+        
+            
+            
+                
+
+@media (max-width:991px)
+    .container
+        width: 720px
+    
+        
+    .main-section
+        
+        
+        
+        
+        &__logo
+            width: 99px
+            height: 104px
+            
+        
+            
+    .nav-menu
+        
+        
+        position: fixed 
+        top: 0
+        right: -100% 
+        height: 100vh
+        background: #FFFFFF
+        z-index: 20
+        width: 50%
+        transition: 0.6s all
+        
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+            z-index: 10000000
+
+            
+        
+            
+
+        &__list-item
+            font-size: 20px
+            margin-right: 0
+            
+            a
+                color: #060606
+    .hamburger
+        
+        width: 30px
+        top: 40px
+        right: 30px
+        position: absolute
+        height: 14px
+        z-index: 30
+        span
+            
+            
+            height: 2px
+            width: 100%
+            display: block
+            background: #FFFFFF
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                
+                margin-bottom: 0
+            
+    .hamburger_active
+        
+        span
+            background: #060606
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        
+        
+        right: 0px
+
+        
+        
+            
+    .left-wrapper
+        position: relative
+        right: -59px
+        width: 500px
+        
+        &__title
+            font-size: 43px
+            width: 200px
+            
+            
+        &__text
+            font-size: 19px
+            line-height: 29px
+            position: relative
+            right: 0
+            width: 500px
+        
+    .title
+        font-size: 36px
+          
+        
+   
+        
+        
+        
+
+    .right-wrapper
+        width: 500px
+        right: 45px
+        &__img
+            width: 479px
+            height: 612px
+            position: relative
+            right: -57px
+      
+            
+    .second-section
+      
+        
+    .portfolio-carousel
+        min-width: 699px
+        
+        
+         
+    
+       
+    .carousel-button.next
+        right: 31px
+    .question-carousel
+        min-width: 699px
+        
+        
+         
+    
+       
+    .carousel-buttons.next
+        right: 31px
+     
+
+
+    .third-section
+        &__cards-box
+            position: relative
+            right: -48px
+            width: 615px
+
+        
+            
+    .img
+        width: 300px
+        height: 200px
+    .fourth-section
+        &__map
+            position: relative
+            right: -16px
+            width: 200px
+            height: 150px
+        &__right-wrapper
+            position: relative
+            right: 97px
+        &__text
+            font-size: 18px
+        
+        
+        
+            
+    .footer
+        min-height: 400px
+        
+        
+        &__container
+            gap: 5px
+            
+        &__column
+            flex: 1 -1 220px
+            font-size: 20px
+            
+        &__logo
+            width: 86px
+            height: 86px
+          
+        &__logo-text
+            font-size: 30px
+    
+
+@media (max-width:767px)
+    .container
+        width: 540px
+    .main-section
+        
+        
+        
+        
+        &__logo
+            width: 99px
+            height: 104px
+            
+        
+            
+    .nav-menu
+        
+        
+        position: fixed 
+        top: 0
+        right: -100% 
+        height: 100vh
+        background: #FFFFFF
+        z-index: 20
+        width: 50%
+        transition: 0.6s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+            z-index: 10000000
+            
+        
+            
+
+        &__list-item
+            font-size: 20px
+            margin-right: 0
+            
+            a
+                color: #060606
+    .hamburger
+        
+        width: 30px
+        top: 40px
+        right: 30px
+        position: absolute
+        height: 14px
+        z-index: 30
+        span
+            display: none
+            
+            height: 2px
+            width: 100%
+            display: block
+            background: #FFFFFF
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                
+                margin-bottom: 0
+            
+    .hamburger_active
+        
+        span
+            background: #060606
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        
+        
+        right: 0px
+        
+        
+            
+    .left-wrapper
+        position: relative
+        right: -59px
+        width: 500px
+        
+        &__title
+            font-size: 43px
+            width: 200px
+            
+            
+        &__text
+            font-size: 19px
+            line-height: 29px
+            position: relative
+            right: 0
+            width: 500px
+        
+    .title
+        font-size: 36px
+          
+        
+   
+        
+        
+        
+
+    .right-wrapper
+        width: 500px
+        right: 45px
+        &__img
+            display: none
+      
+            
+    .second-section
+      
+        
+    .portfolio-carousel
+        min-width: 532px
+        
+        
+         
+    
+       
+    .carousel-button.next
+        right: 31px
+    .question-carousel
+        min-width: 532px
+        
+        
+         
+    
+       
+    .carousel-buttons.next
+        right: 31px
+     
+
+
+    .third-section
+        &__cards-box
+            position: relative
+            right: -121px
+            width: 300px
+            line-height: 100px5
+        
+            
+    .img
+        width: 300px
+        height: 200px
+    .fourth-section
+        padding-top: 30px
+        &__map
+            position: relative
+            right: -191px
+            width: 200px
+            height: 150px
+        &__right-wrapper
+            position: relative
+            right: 282px
+        &__text
+            font-size: 18px
+        &__map-img
+            width: 200px
+            height: 180px 
+        
+        
+        
+            
+    .footer
+        min-height: 400px
+        
+        
+        &__container
+            gap: 5px
+            
+        &__column
+            flex: 1 -1 220px
+            font-size: 20px
+            
+        &__logo
+            width: 86px
+            height: 86px
+          
+        &__logo-text
+            font-size: 30px
+    
+    
+    
+        
+                
+@media (max-width:575px)
+    .container
+        width: 100%
+    .main-section
+        
+        
+        
+        
+        &__logo
+            width: 99px
+            height: 104px
+            
+        
+            
+    .nav-menu
+        
+        
+        position: fixed 
+        top: 0
+        right: -100% 
+        height: 100vh
+        background: #FFFFFF
+        z-index: 2000000000000
+        width: 50%
+        transition: 0.6s all
+        &__list
+            
+            flex-direction: column
+            justify-content: space-evenly
+            height: 100%
+            align-items: center
+            z-index: 10000000
+            
+   
+            
+
+        &__list-item
+            font-size: 20px
+            margin-right: 0
+            
+            
+            a
+                color: #060606
+    .hamburger
+        
+        width: 30px
+        top: 40px
+        right: 30px
+        position: absolute
+        height: 14px
+        z-index: 30
+        span
+            display: none
+            
+            height: 2px
+            width: 100%
+            display: block
+            background: #FFFFFF
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                
+                margin-bottom: 0
+            
+    .hamburger_active
+        
+        span
+            background: #060606
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        
+        
+        right: 0px
+
+        
+        
+            
+    .left-wrapper
+        position: relative
+        right: 11px
+        width: 234px
+        
+        &__title
+            font-size: 43px
+            width: 200px
+            position: relative
+            right: -37px
+            
+            
+        &__text
+            font-size: 15px
+            line-height: 23px
+            position: relative
+            right: -42px
+            width: 234px
+        
+    .title
+        font-size: 36px
+          
+        
+   
+        
+        
+        
+
+    .right-wrapper
+        width: 500px
+        right: 45px
+        &__img
+            display: none
+      
+            
+    .second-section
+      
+        
+    .portfolio-carousel
+        min-width: 277px
+        
+        
+         
+    
+       
+    .carousel-button.next
+        right: 31px
+    
+    .question-carousel
+        min-width: 277px
+        
+        
+         
+    
+       
+    .carousel-buttons.next
+        right: 31px
+     
+
+    
+
+
+    .third-section
+        &__cards-box
+            position: relative
+            right: -20px
+            width: 250px
+            line-height: 100px
+        
+            
+    .img
+        width: 250px
+        height: 150px
+    .fourth-section
+        padding-top: 30px
+        &__map
+            position: relative
+            right: -191px
+            width: 200px
+            height: 150px
+        &__right-wrapper
+            position: relative
+            right: 282px
+            display: none
+        &__text
+            font-size: 18px
+            position: relative
+            right: -47px
+        &__adress
+            position: relative
+            right: -47px
+        &__map-img
+            width: 200px
+            height: 180px 
+        &__left-wrapper
+            width: 252px
+    .register
+        &__img
+            width: 356px
+            height: 277px
+        
+        
+        
+            
+    .footer
+        min-height: 600px
+        
+        
+        &__container
+            gap: 5px
+            
+        &__column
+            flex: 1 -1 220px
+            font-size: 20px
+            
+        &__logo
+            width: 86px
+            height: 86px
+          
+        &__logo-text
+            font-size: 30px
+
+
+   
