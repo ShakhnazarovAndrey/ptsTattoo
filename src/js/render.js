@@ -65,7 +65,7 @@ function renderSteps() {
       ([title, text], i) => `
       <li class="step">
         <span class="step__num">${pad(i + 1)}</span>
-        <p class="step__title">${title}</p>
+        <h4 class="step__title">${title}</h4>
         <p class="step__text">${text}</p>
       </li>`,
     )

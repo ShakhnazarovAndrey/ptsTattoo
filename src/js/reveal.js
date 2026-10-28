@@ -111,22 +111,27 @@ function parallax() {
     });
   });
 
-  // Booking steps: top rule draws across, then content follows
+  // Booking steps: each row slides in, its bottom rule fills while the row crosses the middle of the screen
   gsap.from('.step', {
-    '--line-scale': 0,
-    duration: 1.4,
-    ease: 'expo.inOut',
-    stagger: 0.12,
-    scrollTrigger: onView('.steps'),
-  });
-  gsap.from('.step > *', {
     autoAlpha: 0,
-    y: 24,
-    duration: 1.1,
+    y: 40,
+    duration: 1.2,
     ease: 'expo.out',
-    stagger: 0.04,
-    delay: 0.3,
-    scrollTrigger: onView('.steps'),
+    stagger: 0.1,
+    scrollTrigger: onView('.steps', 'top 85%'),
+  });
+  gsap.utils.toArray('.step').forEach((step) => {
+    gsap.fromTo(step, { '--fill': 0 }, {
+      '--fill': 1,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: step,
+        start: 'top 65%',
+        end: 'bottom 45%',
+        scrub: true,
+        toggleClass: { targets: step, className: 'is-active' },
+      },
+    });
   });
 
   gsap.from('.footer__wordmark', {
