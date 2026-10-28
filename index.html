@@ -1,170 +1,392 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>PTS TATTOO</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
-    <link rel="manifest" href="icons/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="icons/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>PTS TATTOO — тату-студия Александра Плоскова в Санкт-Петербурге</title>
+    <meta
+      name="description"
+      content="Тату-мастер Александр Плосков, опыт с 2007 года. Авторские татуировки в студии PTS TATTOO: ул. Свеаборгская 25, м. Парк Победы / Электросила. Запись в Telegram и VK."
+    />
+    <meta name="theme-color" content="#0b0b0b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="PTS TATTOO — Александр Плосков" />
+    <meta property="og:description" content="Авторские татуировки в Санкт-Петербурге. Опыт с 2007 года." />
+    <meta property="og:url" content="https://shakhnazarovandrey.github.io/ptsTattoo/" />
+    <meta property="og:image" content="https://shakhnazarovandrey.github.io/ptsTattoo/img/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png" />
+    <link rel="preload" as="image" href="/img/hero-1400.webp" imagesrcset="/img/hero-800.webp 800w, /img/hero-1400.webp 1400w, /img/hero-2000.webp 2000w" imagesizes="(max-width: 900px) 100vw, 55vw" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TattooParlor",
+        "name": "PTS TATTOO",
+        "founder": { "@type": "Person", "name": "Александр Плосков" },
+        "url": "https://shakhnazarovandrey.github.io/ptsTattoo/",
+        "image": "https://shakhnazarovandrey.github.io/ptsTattoo/img/og.jpg",
+        "telephone": "+79312106102",
+        "priceRange": "20000–40000 ₽",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Свеаборгская, 25, офис 4Н",
+          "addressLocality": "Санкт-Петербург",
+          "addressCountry": "RU"
+        },
+        "sameAs": ["https://vk.com/pts.tattoo", "https://t.me/PTS_choys"]
+      }
+    </script>
   </head>
   <body>
-    <section class="main-section">
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <!-- Preloader: the PTS triangle draws itself, then the curtain lifts -->
+    <div class="preloader" aria-hidden="true">
+      <svg class="preloader__logo" viewBox="0 0 253 216">
+        <path d="M125.89.51c-.27.07-.36.53-.39.66-.19.87-.5.63-9.61 16.34-3.72 6.41-5.58 9.62-8 14-2.57 4.65-5.64 10.36-9 17-15.13 27.85-26.79 45.47-33 57-2.69 4.99-5.85 10.29-11 19-6.05 10.22-8.4 14.38-15 26-4.18 7.35-7.71 13.24-10 17h34c19.33-33 38.67-66 58-99 3.33 6 6.67 12 10 18-5.67 10.67-11.33 21.33-17 32h80c-16.89-30.28-40.95-70.92-66-113-1.14-2.76-2.34-5.16-3-5Z" />
+        <path d="M85.89 167.51c5.67-9.67 11.33-19.33 17-29h104c15 25.67 30 51.33 45 77H.89c5.67-9.33 11.33-18.67 17-28h171c-3.33-6.67-6.67-13.33-10-20h-93Z" />
+      </svg>
+      <span class="preloader__count">0</span>
+    </div>
+
+    <div class="cursor" aria-hidden="true"><span class="cursor__label">Смотреть</span></div>
+
+    <!-- Compact header: appears once the hero is scrolled past (always on mobile) -->
+    <header class="header">
+      <a class="header__logo" href="#top" aria-label="PTS TATTOO — наверх">
+        <svg viewBox="0 0 253 216" aria-hidden="true"><use href="#logo" /></svg>
+        <span>PTS&nbsp;TATTOO</span>
+      </a>
+      <div class="header__actions">
+        <a class="btn btn--small" href="https://t.me/PTS_choys" target="_blank" rel="noopener" data-magnetic>Записаться</a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span>
+        </button>
       </div>
-      <div class="container main-section__nav-container">
-        <header class="main-section__header">
-          <a href="#"
-            ><img class="main-section__logo" src="icons/Ресурс 1.svg" alt=""
-          /></a>
-        </header>
-        <nav class="main-section__nav nav-menu">
-          <ul class="nav-menu__list">
-            <li class="nav-menu__list-item"><a href="#portfolio">Портфолио</a></li>
-            <li class="nav-menu__list-item"><a href="#questions">Вопросы</a></li>
-            <li class="nav-menu__list-item"><a href="#studio">Студия</a></li>
-            <li class="nav-menu__list-item"><a href="#map">Адрес</a></li>
-            <li class="nav-menu__list-item"><a href="">Личный <br> кабинет</a></li>
-            
-          </ul>
-          
+    </header>
+
+    <nav class="menu" id="menu" aria-label="Меню" hidden>
+      <ul class="menu__list">
+        <li><a href="#about"><span class="menu__num">01</span>Обо мне</a></li>
+        <li><a href="#works"><span class="menu__num">02</span>Работы</a></li>
+        <li><a href="#studio"><span class="menu__num">03</span>Студия</a></li>
+        <li><a href="#price"><span class="menu__num">04</span>Стоимость</a></li>
+        <li><a href="#faq"><span class="menu__num">05</span>Вопросы</a></li>
+        <li><a href="#contacts"><span class="menu__num">06</span>Контакты</a></li>
+      </ul>
+      <div class="menu__footer">
+        <a href="tel:+79312106102">+7 931 210-61-02</a>
+        <span>ул. Свеаборгская 25, офис 4Н</span>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero__media">
+          <img
+            class="hero__img"
+            src="/img/hero-1400.webp"
+            srcset="/img/hero-800.webp 800w, /img/hero-1400.webp 1400w, /img/hero-2000.webp 2000w"
+            sizes="(max-width: 900px) 100vw, 55vw"
+            width="1500"
+            height="2000"
+            alt="Александр Плосков работает над татуировкой в студии"
+            fetchpriority="high"
+          />
+        </div>
+
+        <a class="hero__logo" href="#top" aria-label="PTS TATTOO">
+          <svg viewBox="0 0 253 216" aria-hidden="true"><use href="#logo" /></svg>
+        </a>
+
+        <nav class="hero__nav" aria-label="Разделы">
+          <a href="#about">Обо мне</a>
+          <a href="#works">Работы</a>
+          <a href="#studio">Студия</a>
+          <a href="#price">Стоимость</a>
+          <a href="#faq">Вопросы</a>
+          <a href="#contacts">Контакты</a>
+          <a class="hero__nav-cta" href="https://t.me/PTS_choys" target="_blank" rel="noopener">Записаться</a>
         </nav>
-      </div>
-      <div class="container main-section__content-container">
-        <div class="left-wrapper">
-          <h1 class="left-wrapper__title title">Обо мне</h1>
-          <p class="left-wrapper__text text">Привет! Я Александр Плосков,<br> тату-мастер с 2007 года. За <br> это время улучшал свои <br> навыки и провёл 4 Tattoo <br> Party. Создаю уникальные <br> тату, отражающие вашу <br> индивидуальность. Клиенты <br> ценят мою лёгкую руку — <br> сеансы безболезненны и <br> комфортны. Работаю быстро <br> и качественно, экономя ваше <br> время. В 2021 открыл студию <br> в Санкт-Петербурге. Для меня <br> тату — не просто рисунок, а <br> история в искусстве. Жду вас <br> в студии!</p>
-        </div>
-        <div class="right-wrapper">
-          <img class="right-wrapper__img" src="img/IMG_3320.JPG" alt="">
-        </div>
-      </div>
-    </section>
-    <section id="portfolio" class="second-section">
-      <div class="container second-section__container">
-        <h2 class="second-section__title title">Портфолио</h2>
-        <div class="portfolio-carousel">
-          <button class="carousel-button prev" aria-label="Previous slide">&#10094</button>
-          <div class="carousel-track-container">
-            <div class="carousel-track">
 
+        <div class="hero__content">
+          <p class="hero__script script" data-hero-fade>Alexander Ploskov</p>
+          <h1 class="hero__title">
+            <span class="hero__line"><span>Тату</span></span>
+            <span class="hero__line"><span>с&nbsp;историей</span></span>
+          </h1>
+          <p class="hero__text" data-hero-fade>
+            Авторские татуировки в&nbsp;Санкт-Петербурге. Превращаю вашу идею в&nbsp;работу, которую вы будете носить с&nbsp;гордостью.
+          </p>
+          <div class="hero__actions" data-hero-fade>
+            <a class="btn" href="https://t.me/PTS_choys" target="_blank" rel="noopener" data-magnetic>Записаться на сеанс</a>
+            <a class="link-arrow" href="#works">Смотреть работы</a>
+          </div>
+        </div>
+
+        <div class="hero__meta" data-hero-fade>
+          <span>С 2007 года</span>
+          <span class="hero__meta-line"></span>
+          <span>Санкт-Петербург</span>
+        </div>
+
+        <a class="hero__scroll" href="#marquee" aria-label="Листать вниз" data-hero-fade>
+          <span>Scroll</span>
+          <i></i>
+        </a>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" id="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>PTS Tattoo</span><b>✦</b><span class="script">since 2007</span><b>✦</b><span>4 Tattoo Party</span><b>✦</b><span class="script">Saint-Petersburg</span><b>✦</b>
+        </div>
+      </div>
+
+      <!-- ABOUT -->
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__media">
+          <div class="about__photo" data-parallax-wrap>
+            <img
+              src="/img/detail-1200.webp"
+              srcset="/img/detail-800.webp 800w, /img/detail-1200.webp 1200w"
+              sizes="(max-width: 900px) 100vw, 40vw"
+              width="1200"
+              height="1440"
+              alt="Руки мастера в перчатках во время сеанса"
+              loading="lazy"
+              data-parallax
+            />
+          </div>
+          <div class="about__badge">
+            <img src="/img/portrait-760.webp" width="760" height="760" alt="Александр Плосков" loading="lazy" />
+            <svg class="about__ring" viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="ring" d="M100 100 m-86 0 a86 86 0 1 1 172 0 a86 86 0 1 1 -172 0" /></defs>
+              <text><textPath href="#ring">PTS TATTOO ✦ АЛЕКСАНДР ПЛОСКОВ ✦ SINCE 2007 ✦</textPath></text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow script">about me</p>
+          <h2 class="section-title" id="about-title" data-split>Обо мне</h2>
+          <div class="about__columns">
+            <p data-reveal>
+              Привет! Я&nbsp;Александр Плосков, тату-мастер с&nbsp;2007 года. За&nbsp;это время я&nbsp;постоянно оттачивал навыки и&nbsp;провёл четыре Tattoo Party. Создаю уникальные татуировки, которые отражают вашу индивидуальность.
+            </p>
+            <p data-reveal>
+              Клиенты ценят мою лёгкую руку — сеансы проходят безболезненно и&nbsp;комфортно. Работаю быстро и&nbsp;качественно, экономя ваше время. В&nbsp;2021 году открыл студию в&nbsp;Санкт-Петербурге. Для меня тату — не&nbsp;просто рисунок, а&nbsp;история, рассказанная в&nbsp;искусстве.
+            </p>
+          </div>
+          <p class="about__sign script" data-reveal>Жду вас в студии!</p>
+
+          <dl class="stats">
+            <div class="stats__item" data-reveal>
+              <dt>лет в профессии</dt>
+              <dd><span data-count data-count-since="2007">0</span>+</dd>
             </div>
-
-          </div>
-          <button class="carousel-button next" aria-label="Next slide">&#10095</button>
-        </div>
-      </div>
-      
-    </section>
-    <section id="questions" class="question-section">
-      <div class="container question-section__container">
-        <h6 class="question-section__title title">Ответы на вопросы</h6>
-         <div class="question-carousel">
-          <button class="carousel-buttons prev" aria-label="Previous slide">&#10094</button>
-          <div class="carousel-tracks-container">
-            <div class="carousel-tracks">
-
+            <div class="stats__item" data-reveal>
+              <dt>Tattoo Party</dt>
+              <dd><span data-count="4">0</span></dd>
             </div>
+            <div class="stats__item" data-reveal>
+              <dt>своя студия с</dt>
+              <dd><span data-count="2021" data-count-from="2000">2000</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
+      <!-- WORKS -->
+      <section class="works" id="works" aria-labelledby="works-title">
+        <div class="works__pin">
+          <div class="works__head container">
+            <p class="eyebrow script">portfolio</p>
+            <h2 class="section-title" id="works-title" data-split>Работы</h2>
+            <p class="works__count"><span class="works__current">01</span> / <span class="works__total">25</span></p>
           </div>
-          <button class="carousel-buttons next" aria-label="Next slide">&#10095</button>
+          <div class="works__viewport">
+            <ul class="works__track" data-works></ul>
+          </div>
+          <div class="works__progress" aria-hidden="true"><i></i></div>
         </div>
-      </div>
-    </section>
-    <section id="studio" class="third-section">
-      <div class="container third-section__container">
-        <h3 class="third-section__title title">Студия</h3>
-        <div class="third-section__cards-box">
-          <div class="third-section__cards-item cards-item">
-            <img class="cards-item__img1 img" src="img/studio1.jpg" alt="">
-            <img class="cards-item__img2 img" src="img/studio2.jpg" alt="">
-            <img class="cards-item__img3 img" src="img/studio3.jpg" alt="">
-            <img class="cards-item__img4 img" src="img/studio4.jpg" alt="">
-            <img class="cards-item__img5 img" src="img/studio5.jpg" alt="">
-            <img class="cards-item__img6 img" src="img/studio6.jpg" alt="">
+      </section>
+
+      <!-- STUDIO -->
+      <section class="studio" id="studio" aria-labelledby="studio-title">
+        <div class="container studio__head">
+          <div>
+            <p class="eyebrow script">the place</p>
+            <h2 class="section-title" id="studio-title" data-split>Студия</h2>
+          </div>
+          <p class="studio__lead" data-reveal>
+            Уютное пространство у&nbsp;метро Парк Победы: стерильное рабочее место, комиксы на&nbsp;стенах, неон и&nbsp;спокойная атмосфера, в&nbsp;которой легко пережить даже долгий сеанс.
+          </p>
+        </div>
+        <div class="container studio__grid" data-studio></div>
+      </section>
+
+      <!-- PRICE -->
+      <section class="price" id="price" aria-labelledby="price-title">
+        <div class="container">
+          <p class="eyebrow script">price</p>
+          <h2 class="section-title" id="price-title" data-split>Стоимость</h2>
+
+          <div class="price__cards">
+            <article class="price-card" data-reveal>
+              <p class="price-card__label">Сеанс</p>
+              <h3 class="price-card__time">4 часа</h3>
+              <p class="price-card__note">3 часа чистой работы</p>
+              <p class="price-card__sum"><span data-count="20000" data-count-format>0</span>&nbsp;₽</p>
+            </article>
+            <article class="price-card price-card--accent" data-reveal>
+              <p class="price-card__label">Сеанс</p>
+              <h3 class="price-card__time">8 часов</h3>
+              <p class="price-card__note">6 часов чистой работы</p>
+              <p class="price-card__sum"><span data-count="40000" data-count-format>0</span>&nbsp;₽</p>
+            </article>
+            <aside class="price__prepay" data-reveal>
+              <p class="price__prepay-num">10%</p>
+              <p>Предоплата — бронирует дату и&nbsp;время сеанса. Подробнее в&nbsp;разделе <a href="#faq">вопросов</a>.</p>
+            </aside>
+          </div>
+
+          <h3 class="price__steps-title" data-reveal>Как попасть на сеанс</h3>
+          <ol class="steps" data-steps></ol>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq__inner">
+          <div class="faq__head">
+            <p class="eyebrow script">questions</p>
+            <h2 class="section-title" id="faq-title" data-split>Вопросы</h2>
+            <p class="faq__lead" data-reveal>Подготовка к&nbsp;сеансу, уход за&nbsp;татуировкой и&nbsp;всё, о&nbsp;чём обычно спрашивают перед первым визитом.</p>
+          </div>
+          <div class="faq__list" data-faq></div>
+        </div>
+      </section>
+
+      <!-- CONTACTS -->
+      <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+        <div class="container">
+          <p class="contacts__script script" data-reveal>ваша история начинается здесь</p>
+          <h2 class="contacts__title" id="contacts-title" data-split-chars>Записаться</h2>
+
+          <div class="contacts__grid">
+            <ul class="contact-links">
+              <li data-reveal>
+                <a href="https://t.me/PTS_choys" target="_blank" rel="noopener">
+                  <span class="contact-links__label">Telegram</span>
+                  <span class="contact-links__value">@PTS_choys</span>
+                  <svg class="contact-links__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+                </a>
+              </li>
+              <li data-reveal>
+                <a href="https://vk.com/pts.tattoo" target="_blank" rel="noopener">
+                  <span class="contact-links__label">ВКонтакте</span>
+                  <span class="contact-links__value">pts.tattoo</span>
+                  <svg class="contact-links__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+                </a>
+              </li>
+              <li data-reveal>
+                <a href="tel:+79312106102">
+                  <span class="contact-links__label">Телефон</span>
+                  <span class="contact-links__value">+7 931 210-61-02</span>
+                  <svg class="contact-links__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+                </a>
+              </li>
+            </ul>
+
+            <div class="contacts__place" data-reveal>
+              <div class="contacts__address">
+                <p class="contacts__label">Адрес</p>
+                <p class="contacts__value">ул. Свеаборгская 25, офис&nbsp;4Н</p>
+                <p class="contacts__metro">м. Парк Победы / Электросила</p>
+              </div>
+              <div class="map">
+                <iframe
+                  title="PTS TATTOO на карте"
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A4c747f031b1b9d06733ac3d7e214489a82ff775802320de7ab3b0992084c8bea&amp;source=constructor"
+                  loading="lazy"
+                ></iframe>
+                <a
+                  class="map__open"
+                  href="https://yandex.ru/maps/?um=constructor%3A4c747f031b1b9d06733ac3d7e214489a82ff775802320de7ab3b0992084c8bea&amp;source=constructorStatic"
+                  target="_blank"
+                  rel="noopener"
+                  >Открыть в Яндекс Картах</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-    </section>
-
-    <section id="map" class="fourth-section">
-      <div class="container fourth-section__container">
-        
-        <div class="fourth-section__left-wrapper">
-          <h4 class="fourth-section__title title">Как нас найти</h4>
-          <h5 class="fourth-section__adress title">Адрес:</h5>
-          <p class="fourth-section__text text">м. Парк победы/ Электросила<br> 
-          ул. Свеаборгская 25 офис 4Н</p>
-          <div class="register">
-            <h6 class="register__online text">Записывайтесь <br> <span class="online">онлайн</span></h6>
-            <a href="https://t.me/PTS_choys"><img class="register__img" src="img/саша.png" alt=""></a>
-            <img class="register__cursor" src="img/Без имени-1.png" alt="">
-          </div>
-          
-          
-          
-        </div>
-        <div class="fourth-section__right-wrapper">
-          <a class="fourth-section__map" href="https://yandex.ru/maps/?um=constructor%3A4c747f031b1b9d06733ac3d7e214489a82ff775802320de7ab3b0992084c8bea&amp;source=constructorStatic" target="_blank"><img class="fourth-section__map-img" src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A4c747f031b1b9d06733ac3d7e214489a82ff775802320de7ab3b0992084c8bea&amp;width=400&amp;height=300&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
-
-        </div>
-      </div>
-    </section>
     <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__column footer__column--logo">
-          <img class="footer__logo" src="icons/Ресурс 1.svg" alt="">
-          <h6 class="footer__logo-text">PTS TATTOO</h6>
-        </div>
-        <div class="footer__column">
-          <h6 class="footer__title">Адрес</h6>
-          <p class="footer__text">ул.Свеаборгская 25 офис 4H</p>
-          <h6 class="footer__title">Контакты</h6>
-          <p class="footer__text">https://vk.com/pts.tattoo</p>
-          <p class="footer__text">+7 931 210 6102</p>
-          
-        </div>
-
-        <div class="footer__column">
-          <div class="footer__media">
-            <a href="https://t.me/PTS_choys"><img class="footer__media-tg" src="icons/Social Icons.svg" alt="TG"></a>
-            <a href="https://vk.com/pts.tattoo"><img class="footer__media-vk" src="icons/Social Icons2.svg" alt="VK"></a>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <svg viewBox="0 0 253 216" aria-hidden="true"><use href="#logo" /></svg>
+            <p>Александр Плосков<br />тату-мастер с&nbsp;2007 года</p>
+          </div>
+          <div class="footer__col">
+            <p class="footer__title">Адрес</p>
+            <p>ул. Свеаборгская 25, офис 4Н<br />м. Парк Победы / Электросила</p>
+          </div>
+          <div class="footer__col">
+            <p class="footer__title">Связь</p>
+            <p>
+              <a href="tel:+79312106102">+7 931 210-61-02</a><br />
+              <a href="https://t.me/PTS_choys" target="_blank" rel="noopener">Telegram</a> ·
+              <a href="https://vk.com/pts.tattoo" target="_blank" rel="noopener">ВКонтакте</a>
+            </p>
+          </div>
+          <div class="footer__col">
+            <p class="footer__title">Оплата</p>
+            <div class="footer__payments">
+              <img src="/icons/MIR.svg" alt="МИР" width="54" height="21" />
+              <img src="/icons/VISA.svg" alt="VISA" width="54" height="21" />
+              <img src="/icons/MC.svg" alt="Mastercard" width="54" height="21" />
+            </div>
           </div>
         </div>
-
-        <div class="footer__column">
-          <div class="footer__payments">
-            <img src="icons/MIR.svg" alt="">
-            <img class="footer__payments-visa" src="icons/VISA.svg" alt="">
-            <img src="icons/MC.svg" alt="">
-          </div>
-          <p class="footer__designer">design by AndreySh <br> tg <a href="https://t.me/andrushashakh">@andrushashakh</a></p>
-
+        <p class="footer__wordmark" aria-hidden="true">PTS TATTOO</p>
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> PTS TATTOO</span>
+          <a href="#top" class="link-arrow link-arrow--up">Наверх</a>
+          <span>design by <a href="https://t.me/andrushashakh" target="_blank" rel="noopener">AndreySh</a></span>
         </div>
-        
-
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр работы" hidden>
+      <button class="lightbox__close" type="button" aria-label="Закрыть">Закрыть</button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Предыдущая работа">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" /></svg>
+      </button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" alt="" />
+        <figcaption class="lightbox__counter"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Следующая работа">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+      </button>
+    </div>
+
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="logo" viewBox="0 0 253 216">
+        <path fill="currentColor" d="M125.89.51c-.27.07-.36.53-.39.66-.19.87-.5.63-9.61 16.34-3.72 6.41-5.58 9.62-8 14-2.57 4.65-5.64 10.36-9 17-15.13 27.85-26.79 45.47-33 57-2.69 4.99-5.85 10.29-11 19-6.05 10.22-8.4 14.38-15 26-4.18 7.35-7.71 13.24-10 17h34c19.33-33 38.67-66 58-99 3.33 6 6.67 12 10 18-5.67 10.67-11.33 21.33-17 32h80c-16.89-30.28-40.95-70.92-66-113-1.14-2.76-2.34-5.16-3-5Z" />
+        <path fill="currentColor" d="M85.89 167.51c5.67-9.67 11.33-19.33 17-29h104c15 25.67 30 51.33 45 77H.89c5.67-9.33 11.33-18.67 17-28h171c-3.33-6.67-6.67-13.33-10-20h-93Z" />
+      </symbol>
+    </svg>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
